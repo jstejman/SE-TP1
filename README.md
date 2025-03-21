@@ -26,6 +26,7 @@ NUCLEO-F429ZI
  - LED 2: Se enciende y apaga cada un segundo para indicar que el sistema está activo.
  - ANALOG IN 1: Se utiliza para leer el nivel de humedad del suelo mediante un sensor analógico.
  - UART: Se utiliza para enviar información de estado del sistema a la PC.
+ - Bomba de agua: Mueve agua de un recipiente a otro lado a través de una manguera. 
 
 ### Diagrama en bloques:
-![Diagrama en Bloques](image.png)
+![alt text](bloques.png)
