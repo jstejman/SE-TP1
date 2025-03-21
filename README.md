@@ -17,6 +17,7 @@ Cada segundo se enciende y apaga un LED indicando que el sistema está activo. S
 - Nivel de humedad actual
 - Tiempo hasta la próxima medición de humedad
 
+
 ### Plataforma de desarrollo: 
 NUCLEO-F429ZI
 ### Periféricos a utilizar
