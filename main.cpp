@@ -26,7 +26,11 @@ int main()
         }
         
         // Parpadeo de LED
-        ledActivo = !ledActivo;
+        if (ledActivo == 1) {
+            ledActivo = 0;
+        } else {
+            ledActivo = 1;
+        }
         // Salida UART
         printf(
             "Riego: %s | Botón: %s | Humedad: %.2f \n",
