@@ -1,0 +1,53 @@
+\doxysection{main.\+cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+En este archivo se ejecutan todas las tareas a realizar del sistema de riego.  
+
+
+{\ttfamily \#include "{}mbed.\+h"{}}\newline
+{\ttfamily \#include "{}pins\+\_\+variables\+\_\+umbrales.\+h"{}}\newline
+{\ttfamily \#include "{}boton.\+h"{}}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+Include dependency graph for main.\+cpp\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+En este archivo se ejecutan todas las tareas a realizar del sistema de riego. 
+
+\begin{DoxyAuthor}{Author}
+Julián (\href{mailto:jstejman@fi.uba.ar}{\texttt{ jstejman@fi.\+uba.\+ar}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2025-\/04-\/03
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2025 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Lectura de humedad cada vez que se reinicia el bucle
+
+Condiciones de activación de bomba en sistema de riego
+
+Parpadeo de LED Activo
+
+Salida UART del estado de riego y del botón, como de la humedad medida.
+
+Se espera 1 segundo antes de reiniciar el bucle

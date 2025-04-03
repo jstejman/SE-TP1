@@ -1,0 +1,59 @@
+\doxysection{pins\+\_\+variables\+\_\+umbrales.\+h File Reference}
+\hypertarget{pins__variables__umbrales_8h}{}\label{pins__variables__umbrales_8h}\index{pins\_variables\_umbrales.h@{pins\_variables\_umbrales.h}}
+
+
+Este header define los pines asociados a cada periférico y las variables que manejan su comportamiento.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{pins__variables__umbrales_8h_a952e6873cbfe33b9a1d10c86ac2292c0}\label{pins__variables__umbrales_8h_a952e6873cbfe33b9a1d10c86ac2292c0} 
+\#define {\bfseries PIN\+\_\+\+HUMEDAD}~A1
+\item 
+\Hypertarget{pins__variables__umbrales_8h_aef37ea1bcf0fe70955313f247e3c1291}\label{pins__variables__umbrales_8h_aef37ea1bcf0fe70955313f247e3c1291} 
+\#define {\bfseries PIN\+\_\+\+RIEGO}~D1
+\item 
+\Hypertarget{pins__variables__umbrales_8h_a9790424714de1b41f16bdffcb2ab7b62}\label{pins__variables__umbrales_8h_a9790424714de1b41f16bdffcb2ab7b62} 
+\#define {\bfseries PIN\+\_\+\+ACTIVO}~D2
+\item 
+\Hypertarget{pins__variables__umbrales_8h_a04c091f47b05cd33db87cbb066492c68}\label{pins__variables__umbrales_8h_a04c091f47b05cd33db87cbb066492c68} 
+\#define {\bfseries PIN\+\_\+\+BOMBA}~D3
+\item 
+\Hypertarget{pins__variables__umbrales_8h_a9c471eeb260dd64a0bbb53bf3d54136a}\label{pins__variables__umbrales_8h_a9c471eeb260dd64a0bbb53bf3d54136a} 
+\#define {\bfseries PIN\+\_\+\+BOTON}~D4
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{pins__variables__umbrales_8h_a6e958f82830fc0406fa0caca65afb8a2}\label{pins__variables__umbrales_8h_a6e958f82830fc0406fa0caca65afb8a2} 
+Analog\+In {\bfseries humedad} (PIN\+\_\+\+HUMEDAD)
+\begin{DoxyCompactList}\small\item\em Sensor de humedad. \end{DoxyCompactList}\item 
+\Hypertarget{pins__variables__umbrales_8h_aabd9c38e3929b920724d9e74f6c9099f}\label{pins__variables__umbrales_8h_aabd9c38e3929b920724d9e74f6c9099f} 
+Digital\+Out {\bfseries led\+Riego} (PIN\+\_\+\+RIEGO)
+\begin{DoxyCompactList}\small\item\em Led de riego activo. \end{DoxyCompactList}\item 
+\Hypertarget{pins__variables__umbrales_8h_a8c7c8a4618385ff706bac1682032678b}\label{pins__variables__umbrales_8h_a8c7c8a4618385ff706bac1682032678b} 
+Digital\+Out {\bfseries led\+Activo} (PIN\+\_\+\+ACTIVO)
+\begin{DoxyCompactList}\small\item\em LED de sistema activo. \end{DoxyCompactList}\item 
+\Hypertarget{pins__variables__umbrales_8h_a208bde7fa2575444d1377935a407b173}\label{pins__variables__umbrales_8h_a208bde7fa2575444d1377935a407b173} 
+Digital\+Out {\bfseries bomba} (PIN\+\_\+\+BOMBA)
+\begin{DoxyCompactList}\small\item\em Control de la bomba. \end{DoxyCompactList}\item 
+\Hypertarget{pins__variables__umbrales_8h_aee3c274316ed57a68ac993b4bf6871c9}\label{pins__variables__umbrales_8h_aee3c274316ed57a68ac993b4bf6871c9} 
+Interrupt\+In {\bfseries boton} (PIN\+\_\+\+BOTON)
+\begin{DoxyCompactList}\small\item\em Botón de riego manual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{pins__variables__umbrales_8h_adc2c1dedf1137d06dbcbd96822b1925a}\label{pins__variables__umbrales_8h_adc2c1dedf1137d06dbcbd96822b1925a} 
+float {\bfseries umbral\+Humedad} = 0.\+3
+\item 
+\Hypertarget{pins__variables__umbrales_8h_af4751f626d8f1fa0331987c340b53c39}\label{pins__variables__umbrales_8h_af4751f626d8f1fa0331987c340b53c39} 
+bool {\bfseries riego\+Manual} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Este header define los pines asociados a cada periférico y las variables que manejan su comportamiento. 
+

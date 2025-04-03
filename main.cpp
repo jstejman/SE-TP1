@@ -1,3 +1,14 @@
+/**
+ * @file main.cpp
+ * @author Julián (jstejman@fi.uba.ar)
+ * @brief En este archivo se ejecutan todas las tareas a realizar del sistema de riego
+ * @version 0.1
+ * @date 2025-04-03
+ * 
+ * @copyright Copyright (c) 2025
+ * 
+ */
+
 #include "mbed.h"
 #include "pins_variables_umbrales.h"
 #include "boton.h"
@@ -13,10 +24,16 @@ int main()
     
     while(true) 
     {
-        //Leer humedad
+        /**
+         * @brief Lectura de humedad cada vez que se reinicia el bucle
+         * 
+         */
         humedadActual = humedad.read(); 
         
-        // Condiciones para iniciar riego
+        /**
+         * @brief Condiciones de activación de bomba en sistema de riego
+         * 
+         */
         if (!riegoManual && humedadActual < umbralHumedad) {
             bomba = 1;
             ledRiego = 1;
@@ -25,20 +42,30 @@ int main()
             ledRiego = 0;
         }
         
-        // Parpadeo de LED
+        /**
+         * @brief Parpadeo de LED Activo
+         * 
+         */
         if (ledActivo == 1) {
             ledActivo = 0;
         } else {
             ledActivo = 1;
         }
-        // Salida UART
+        
+        /**
+         * @brief Salida UART del estado de riego y del botón, como de la humedad medida.
+         * 
+         */
         printf(
             "Riego: %s | Botón: %s | Humedad: %.2f \n",
             (bomba == 1) ? "Activo" : "Inactivo",
             riegoManual = "Activado" : "Desactivado",
             humedadActual 
         );
-        // Esperar 1 segundo para reiniciar el ciclo
+        /**
+         * @brief Se espera 1 segundo antes de reiniciar el bucle
+         * 
+         */
         ThisThread::sleep_for(1000);
     }
 }
