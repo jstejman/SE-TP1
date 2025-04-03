@@ -29,5 +29,8 @@ NUCLEO-F429ZI
  - UART: Se utiliza para enviar información de estado del sistema a la PC.
  - Bomba de agua: Mueve agua de un recipiente a otro lado a través de una manguera. 
 
+### Documentación para los códigos fuente
+Se incluye una página de documentación en [este](https://jstejman.github.io/SE-TP1/html/index.html) enlace con explicaciones sobre las funciones utilizadas.    
+
 ### Diagrama en bloques:
 ![Diagrama en bloques](bloques.png)
