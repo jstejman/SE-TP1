@@ -30,4 +30,4 @@ NUCLEO-F429ZI
  - Bomba de agua: Mueve agua de un recipiente a otro lado a través de una manguera. 
 
 ### Diagrama en bloques:
-![alt text](bloques.png)
+![Diagrama en bloques](bloques.png)
