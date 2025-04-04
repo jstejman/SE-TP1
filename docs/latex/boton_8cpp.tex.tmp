@@ -1,0 +1,74 @@
+\doxysection{boton.\+cpp File Reference}
+\hypertarget{boton_8cpp}{}\label{boton_8cpp}\index{boton.cpp@{boton.cpp}}
+
+
+En este archivo se define el comportamiento de los botones al ser o dejar de ser presionados.  
+
+
+{\ttfamily \#include "{}pins\+\_\+umbrales.\+h"{}}\newline
+Include dependency graph for boton.\+cpp\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{boton_8cpp_a73cf3a984a6ed8f21876e5372bccee0a}{boton\+Presionado}} ()
+\begin{DoxyCompactList}\small\item\em Esta función define qué sucede cuando el botón se aprieta. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{boton_8cpp_aeebc958053791262c5f4d3d40f8d8319}{boton\+Libre}} ()
+\begin{DoxyCompactList}\small\item\em Esta función define qué sucede cuando el botón se deja de apretar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+En este archivo se define el comportamiento de los botones al ser o dejar de ser presionados. 
+
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2025-\/04-\/03
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2025 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{boton_8cpp_aeebc958053791262c5f4d3d40f8d8319}\label{boton_8cpp_aeebc958053791262c5f4d3d40f8d8319} 
+\index{boton.cpp@{boton.cpp}!botonLibre@{botonLibre}}
+\index{botonLibre@{botonLibre}!boton.cpp@{boton.cpp}}
+\doxysubsubsection{\texorpdfstring{botonLibre()}{botonLibre()}}
+{\footnotesize\ttfamily void boton\+Libre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Esta función define qué sucede cuando el botón se deja de apretar. 
+
+\begin{quote}
+Se apaga el riego manual \end{quote}
+
+
+\begin{quote}
+Se apaga la bomba \end{quote}
+
+
+\begin{quote}
+Se apaga LED de riego \end{quote}
+\Hypertarget{boton_8cpp_a73cf3a984a6ed8f21876e5372bccee0a}\label{boton_8cpp_a73cf3a984a6ed8f21876e5372bccee0a} 
+\index{boton.cpp@{boton.cpp}!botonPresionado@{botonPresionado}}
+\index{botonPresionado@{botonPresionado}!boton.cpp@{boton.cpp}}
+\doxysubsubsection{\texorpdfstring{botonPresionado()}{botonPresionado()}}
+{\footnotesize\ttfamily void boton\+Presionado (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Esta función define qué sucede cuando el botón se aprieta. 
+
+\begin{quote}
+Se enciende el riego manual \end{quote}
+
+
+\begin{quote}
+Se enciende la bomba \end{quote}
+
+
+\begin{quote}
+Se enciende LED de riego \end{quote}

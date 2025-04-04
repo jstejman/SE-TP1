@@ -1,0 +1,21 @@
+\doxysection{pins\+\_\+variables\+\_\+umbrales.\+h}
+\hypertarget{pins__variables__umbrales_8h_source}{}\label{pins__variables__umbrales_8h_source}\mbox{\hyperlink{pins__variables__umbrales_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ PIN\_HUMEDAD\ A1}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ PIN\_RIEGO\ D1}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ PIN\_ACTIVO\ D2}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ PIN\_BOMBA\ D3}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ PIN\_BOTON\ D4}}
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ Pins}}
+\DoxyCodeLine{00013\ AnalogIn\ \mbox{\hyperlink{pins__variables__umbrales_8h_a6e958f82830fc0406fa0caca65afb8a2}{humedad}}(PIN\_HUMEDAD);\ \ \ \ \ \ }
+\DoxyCodeLine{00014\ DigitalOut\ \mbox{\hyperlink{pins__variables__umbrales_8h_aabd9c38e3929b920724d9e74f6c9099f}{ledRiego}}(PIN\_RIEGO);\ \ \ \ \ }
+\DoxyCodeLine{00015\ DigitalOut\ \mbox{\hyperlink{pins__variables__umbrales_8h_a8c7c8a4618385ff706bac1682032678b}{ledActivo}}(PIN\_ACTIVO);\ \ \ }
+\DoxyCodeLine{00016\ DigitalOut\ \mbox{\hyperlink{pins__variables__umbrales_8h_a208bde7fa2575444d1377935a407b173}{bomba}}(PIN\_BOMBA);\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00017\ InterruptIn\ \mbox{\hyperlink{pins__variables__umbrales_8h_aee3c274316ed57a68ac993b4bf6871c9}{boton}}(PIN\_BOTON);\ \ \ \ \ \ \ }
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{comment}{//\ Variables}}
+\DoxyCodeLine{00020\ \textcolor{keywordtype}{float}\ umbralHumedad\ =\ 0.3;}
+\DoxyCodeLine{00021\ \textcolor{keywordtype}{bool}\ riegoManual\ =\ \textcolor{keyword}{false};}
+
+\end{DoxyCode}
