@@ -29,8 +29,33 @@ NUCLEO-F429ZI
  - UART: Se utiliza para enviar información de estado del sistema a la PC.
  - Bomba de agua: Mueve agua de un recipiente a otro lado a través de una manguera. 
 
+### Descripción de código
+#### 1. Monitoreo de Humedad: 
+- Lee un sensor analógico de humedad y guarda el valor. 
+- Compara la humedad con un umbral predefinido.
+- Si el sustrato está seco activa una bomba de agua.
+#### 2. Riego manual con botón:
+- Usa el botón para activar el riego manualmente.
+- Mientras se aprieta el botón:
+  - La bomba se enciende 
+  - Un LED de riego se activa
+#### 3. Indicadores Visuales:
+- LED de riego: Se enciende cuando el sistema riega
+- LED de sistema activo: Parpadea cada segundo para indicar que el sistema está en ejecución.
+#### 4. Comunicación Serial (UART)
+ - Cada segundo, envía por UART un reporte con:
+    - Estado de riego
+    - Valor de humedad actual
+
+
 ### Documentación para los códigos fuente
 Se incluye una página de documentación en [este](https://jstejman.github.io/SE-TP1/html/index.html) enlace con explicaciones sobre las funciones utilizadas.    
 
+### Video
+En [este](https://www.youtube.com/watch?v=121yWFNWNIY) enlace está un video explicando el desarrollo del trabajo
+
 ### Diagrama en bloques:
 ![Diagrama en bloques](bloques.png)
+
+### Diagrama de placa:
+![Diagrama de placa](placa.png)
